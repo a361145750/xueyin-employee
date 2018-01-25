@@ -20,20 +20,20 @@ public class SignInfo extends BaseAuditingEntity {
     /**
      *  签到人员
      */
-    @Column(name = "sing_user")
-    private Long singUser;
+    @Column(name = "sign_user")
+    private Long signUser;
 
     /**
      *  签到方式 1 签到 2 签退
      */
-    @Column(name = "sing_type")
-    private String singType;
+    @Column(name = "sign_type")
+    private String signType;
 
     /**
      *  签到终端 1 pc 2 移动端
      */
-    @Column(name = "sing_client_type")
-    private String singClientType;
+    @Column(name = "sign_client_type")
+    private String signClientType;
 
     /**
      *  签到经度
@@ -47,28 +47,28 @@ public class SignInfo extends BaseAuditingEntity {
     @Column(name = "latitude")
     private Double latitude;
 
-    public Long getSingUser() {
-        return singUser;
+    public Long getSignUser() {
+        return signUser;
     }
 
-    public void setSingUser(Long singUser) {
-        this.singUser = singUser;
+    public void setSignUser(Long signUser) {
+        this.signUser = signUser;
     }
 
-    public String getSingType() {
-        return singType;
+    public String getSignType() {
+        return signType;
     }
 
-    public void setSingType(String singType) {
-        this.singType = singType;
+    public void setSignType(String signType) {
+        this.signType = signType;
     }
 
-    public String getSingClientType() {
-        return singClientType;
+    public String getSignClientType() {
+        return signClientType;
     }
 
-    public void setSingClientType(String singClientType) {
-        this.singClientType = singClientType;
+    public void setSignClientType(String signClientType) {
+        this.signClientType = signClientType;
     }
 
     public Double getLongitude() {

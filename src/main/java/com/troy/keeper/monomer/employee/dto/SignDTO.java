@@ -26,17 +26,17 @@ public class SignDTO implements Serializable {
     @JsonFormat(timezone = "GMT+8", pattern = "yyyy-MM-dd HH:mm:ss")
     private Instant signDateTimeEnd;
 
-    private Long singUser;
+    private Long signUser;
 
-    private Long singUserName;
+    private String signUserName;
 
-    private String singType;
+    private String signType;
 
-    private String singTypeName;
+    private String signTypeName;
 
-    private String singClientType;
+    private String signClientType;
 
-    private String singClientTypeName;
+    private String signClientTypeName;
 
     private Double longitude;
 
@@ -66,52 +66,52 @@ public class SignDTO implements Serializable {
         this.signDateTimeEnd = signDateTimeEnd;
     }
 
-    public Long getSingUser() {
-        return singUser;
+    public Long getSignUser() {
+        return signUser;
     }
 
-    public void setSingUser(Long singUser) {
-        this.singUser = singUser;
+    public void setSignUser(Long signUser) {
+        this.signUser = signUser;
     }
 
-    public Long getSingUserName() {
-        return singUserName;
+    public String getSignUserName() {
+        return signUserName;
     }
 
-    public void setSingUserName(Long singUserName) {
-        this.singUserName = singUserName;
+    public void setSignUserName(String signUserName) {
+        this.signUserName = signUserName;
     }
 
-    public String getSingType() {
-        return singType;
+    public String getSignType() {
+        return signType;
     }
 
-    public void setSingType(String singType) {
-        this.singType = singType;
+    public void setSignType(String signType) {
+        this.signType = signType;
     }
 
-    public String getSingTypeName() {
-        return singTypeName;
+    public String getSignTypeName() {
+        return signTypeName;
     }
 
-    public void setSingTypeName(String singTypeName) {
-        this.singTypeName = singTypeName;
+    public void setSignTypeName(String signTypeName) {
+        this.signTypeName = signTypeName;
     }
 
-    public String getSingClientType() {
-        return singClientType;
+    public String getSignClientType() {
+        return signClientType;
     }
 
-    public void setSingClientType(String singClientType) {
-        this.singClientType = singClientType;
+    public void setSignClientType(String signClientType) {
+        this.signClientType = signClientType;
     }
 
-    public String getSingClientTypeName() {
-        return singClientTypeName;
+    public String getSignClientTypeName() {
+        return signClientTypeName;
     }
 
-    public void setSingClientTypeName(String singClientTypeName) {
-        this.singClientTypeName = singClientTypeName;
+    public void setSignClientTypeName(String signClientTypeName) {
+        this.signClientTypeName = signClientTypeName;
     }
 
     public Double getLongitude() {

@@ -33,7 +33,7 @@ public class SignResource extends BaseResource{
     @RequestMapping(value = "/api/employee/signIn", method = RequestMethod.POST)
     public ResponseDTO<Void> signIn(@RequestBody SignDTO signDTO) throws Exception {
         try {
-            if(signDTO.getSingUser() == null){
+            if(signDTO.getSignUser() == null){
                 fail("用户为空！");
             }
             if(signService.signIn(signDTO)){
@@ -49,7 +49,7 @@ public class SignResource extends BaseResource{
     @RequestMapping(value = "/api/employee/signOut", method = RequestMethod.POST)
     public ResponseDTO<Void> signOut(@RequestBody SignDTO signDTO) throws Exception {
         try {
-            if(signDTO.getSingUser() == null){
+            if(signDTO.getSignUser() == null){
                 fail("用户为空！");
             }
             if(signService.signOut(signDTO)){
@@ -65,7 +65,7 @@ public class SignResource extends BaseResource{
     @RequestMapping(value = "/api/employee/getSignList", method = RequestMethod.POST)
     public ResponseDTO<List<SignDTO>> getSignList(@RequestBody SignDTO signDTO) throws Exception {
         try {
-            if(signDTO.getSingUser() == null){
+            if(signDTO.getSignUser() == null){
                 fail("用户为空！");
             }
             return success(signService.getSignList(signDTO));
@@ -78,7 +78,7 @@ public class SignResource extends BaseResource{
     @RequestMapping(value = "/api/employee/getSignListPage", method = RequestMethod.POST)
     public ResponseDTO<List<SignDTO>> getSignListPage(@RequestBody SignDTO signDTO, Pageable pageable) throws Exception {
         try {
-            if(signDTO.getSingUser() == null){
+            if(signDTO.getSignUser() == null){
                 fail("用户为空！");
             }
             return success(signService.getSignListPage(signDTO, pageable));
